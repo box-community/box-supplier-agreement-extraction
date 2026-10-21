@@ -183,7 +183,7 @@ Output looks similar to this:
 
 | Symptom | Fix |
 | --- | --- |
-| `ModuleNotFoundError` | Activate the venv: `source .venv/bin/activate`. Note the SDK package is `box-sdk-gen`, not `boxsdk`. |
+| `ModuleNotFoundError` | Activate the venv: `source .venv/bin/activate`. Install `boxsdk` only; it provides the `box_sdk_gen` module. Don't also install `box-sdk-gen`. |
 | `invalid_client` | Check `BOX_CLIENT_ID` / `BOX_CLIENT_SECRET` / `BOX_ENTERPRISE_ID` in `.env`. |
 | `unauthorized_client` | Authorize the app in the Admin Console (Developer Console > Authorization > Review and Submit). |
 | `404 Not Found` | Invite the Service Account as a collaborator on the folder containing the agreement. |
